@@ -22,6 +22,8 @@ public class InMemoryUserRepository extends InMemoryBaseRepository<User> impleme
         map.put(UserTestData.ADMIN_ID, ADMIN);
     }
 
+
+
     @Override
     public List<User> getAll() {
         return getCollection().stream()
